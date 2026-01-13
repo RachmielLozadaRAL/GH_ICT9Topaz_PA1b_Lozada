@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>History of JavaScript</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:20px;color:#111}
+    h1{font-size:24px;margin-bottom:6px}
+    h2{font-size:18px;margin:14px 0 6px}
+    p,li{font-size:14px;margin:6px 0}
+    a{color:blue}
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+
+  <script>
+    // Simple script to build the page content
+    const app = document.getElementById('app');
+    app.innerHTML = `
+      <h1>History of JavaScript</h1>
+
+      <h2>Where it started</h2>
+      <p>JavaScript was made in 1995 by Brendan Eich at Netscape. It was first called Mocha, then LiveScript, and finally JavaScript.</p>
+
+      <h2>Why it became a standard</h2>
+      <p>Because different browsers used different versions, ECMA made a standard called ECMAScript so the language would work the same everywhere.</p>
+
+      <h2>Simple timeline</h2>
+      <ul>
+        <li>1995 — Created at Netscape.</li>
+        <li>1997 — ECMAScript standard begins.</li>
+        <li>2008 — Faster engines (like V8) improve speed.</li>
+        <li>2009 — Node.js brings JavaScript to servers.</li>
+        <li>2015 — ES6 adds many modern features.</li>
+      </ul>
+
+      <h2>More info</h2>
+      <p>MDN (developer.mozilla.org) has an easy history page for learners: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/History" target="_blank" rel="noopener">MDN JavaScript History</a></p>
+    `;
+
+      document.getElementById('time').textContent = now.toLocaleString();
+    ;
+  </script>
+</body>
+</html>
